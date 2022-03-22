@@ -1,0 +1,26 @@
+server:
+  port: 5000
+
+spring:
+  boot:
+    admin:
+      client:
+        url:
+          - 'http://localhost:4567' #监控地址
+        instance:
+          service-base-url: 'http://localhost:5000'
+  profiles:
+    active: dev
+  application:
+    name: bin-core-user
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 122.51.126.78:8848
+        namespace: 71218231-b24a-456d-b909-b00dda239f54
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        namespace: ${spring.cloud.nacos.discovery.namespace}
+        file-extension: yml
+        shared-configs:
+          - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}

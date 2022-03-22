@@ -1,0 +1,19 @@
+server:
+  port: 4567
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: bin-core-monitor
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 122.51.126.78:8848
+        namespace: 71218231-b24a-456d-b909-b00dda239f54
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        namespace: ${spring.cloud.nacos.discovery.namespace}
+        file-extension: yml
+        shared-configs:
+          - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}

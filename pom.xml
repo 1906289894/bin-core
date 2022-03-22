@@ -11,8 +11,8 @@
     <description>Core Project Architecture</description>
     <modules>
         <module>bin-core-user</module>
-        <module>bin-core-authentication</module>
         <module>bin-core-common</module>
+        <module>bin-core-monitor</module>
     </modules>
 
     <properties>
