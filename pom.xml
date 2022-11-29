@@ -7,19 +7,20 @@
     <groupId>com.core</groupId>
     <artifactId>bin-core</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <description>Core Project Architecture</description>
     <modules>
         <module>bin-core-user</module>
         <module>bin-core-common</module>
         <module>bin-core-monitor</module>
+        <module>bin-open-tools</module>
+        <module>bin-data</module>
     </modules>
-
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <spring-boot.version>2.3.7.RELEASE</spring-boot.version>
-        <mybatis-plus.version>3.4.2</mybatis-plus.version>
+        <spring-boot.version>2.7.4</spring-boot.version>
+        <mybatis-plus.version>3.5.2</mybatis-plus.version>
     </properties>
 
     <dependencies>

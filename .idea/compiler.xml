@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="bin-core-monitor" />
+        <module name="bin-open-tools" />
         <module name="bin-core-common" />
         <module name="bin-core-user" />
-        <module name="bin-core-monitor" />
+        <module name="bin-data" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
