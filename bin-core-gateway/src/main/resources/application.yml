@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: bin-core-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: c9d2b8f4-2778-4452-a69c-c5e30b988dae
+    gateway:
+      routes:
+        - id: user_route
+          uri: http://localhost/5000
+          predicates:
+            
+

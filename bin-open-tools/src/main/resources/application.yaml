@@ -1,0 +1,9 @@
+server:
+  port: 11011
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://82.157.173.166:3306/bin-core?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 4xT8yjzNKWXZMfT6
